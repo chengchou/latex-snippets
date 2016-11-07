@@ -29,12 +29,14 @@ To use them, first save these two snippets, and second define key bindings to im
 {
     "keys": ["super+shift+1"],
     "command": "insert_snippet", 
-    "args": { "name": "Packages/User/My Snippets/LaTeX/turn_on_number.sublime-snippet"}
+    "args": { "name": "Packages/User/My Snippets/LaTeX/turn_on_number.sublime-snippet"},
+		"context":[{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}]
 },
 {
     "keys": ["super+shift+0"],
     "command": "insert_snippet", 
     "args": { "name": "Packages/User/My Snippets/LaTeX/turn_off_number.sublime-snippet"}
+    "context":[{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}]
 },
 ```
 
